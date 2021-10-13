@@ -1,29 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 {%block main%}
-    <div class="position-relative overflow-hidden text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Punny headline</h1>
-      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#" style="">Coming soon</a>
+    <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url({% static 'main/img/sea.jpeg' %}); background-position: center ">
+    <div class="col-md-5 p-lg-5 mx-auto my-5" >
+      <h1 class="display-4 fw-normal text-light ">Punny headline</h1>
+      <p class="lead fw-normal text-light">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+      <a class="btn btn-outline-light" href="#" style="">About Us</a>
     </div>
   </div>
 <div class="row my-4 d-flex justify-content-center">
             <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
-                <div class="card h-100" >
-                  <a href="">
-                    <img class="card-img-top p-4" src="{% static "img/test.jpg" %}" alt="Card image cap">
-                  </a>
+                <div class="card" >
+                    <img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap">
                   <div class="card-body">
+
                     <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, omnis?</h5>
                   </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
                 <div class="card h-100" >
-                  <a href="">
-                    <img class="card-img-top p-4" src="https://yandex.ru/images/search?text=yacht&from=tabbar&pos=20&img_url=https%3A%2F%2Fscontent-hel3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Ffr%2Fe15%2Fs1080x1080%2F118702385_1661440024012197_5828843511834449407_n.jpg%3Ftp%3D1%26_nc_ht%3Dscontent-hel3-1.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DFQuXa5CRJZcAX8fsS0p%26edm%3DABfd0MgAAAAA%26ccb%3D7-4%26oh%3Daf6b8bcdd45816b0fc4d136f45ba6f5f%26oe%3D60A4A4A4%26_nc_sid%3D7bff83&rpt=simage&family=yes" alt="Card image cap">
-                  </a>
+                  <img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, labore.</h5>
 
@@ -32,9 +29,7 @@
             </div>
              <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
                     <div class="card h-100" >
-                      <a href="">
-                        <img class="card-img-top p-4" src="https://yandex.ru/images/search?text=yacht&from=tabbar&pos=20&img_url=https%3A%2F%2Fscontent-hel3-1.cdninstagram.com%2Fv%2Ft51.2885-15%2Ffr%2Fe15%2Fs1080x1080%2F118702385_1661440024012197_5828843511834449407_n.jpg%3Ftp%3D1%26_nc_ht%3Dscontent-hel3-1.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DFQuXa5CRJZcAX8fsS0p%26edm%3DABfd0MgAAAAA%26ccb%3D7-4%26oh%3Daf6b8bcdd45816b0fc4d136f45ba6f5f%26oe%3D60A4A4A4%26_nc_sid%3D7bff83&rpt=simage&family=yes" alt="Card image cap">
-                      </a>
+                      <img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptates!</h5>
                       </div>
