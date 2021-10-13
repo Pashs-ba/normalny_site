@@ -1,44 +1,57 @@
 {% extends 'base.html' %}
 {% load static %}
 {%block main%}
-    <div class="position-relative overflow-hidden text-center bg-light" style="background-image: url({% static 'main/img/sea.jpeg' %}); background-position: center ">
+<div class="position-relative overflow-hidden text-center bg-light" style="background-image: url({% static 'main/img/sea.jpeg' %}); background-position: center ">
     <div class="col-md-5 p-lg-5 mx-auto my-5" >
       <h1 class="text-light display-2">Good yachts</h1>
       <p class="lead fw-normal text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque debitis delectus laboriosam laudantium maxime perspiciatis quis sit tenetur voluptatum!</p>
       <a class="btn btn-lg btn-outline-light" href="#" style="">About Us</a>
     </div>
-  </div>
-    <div class="" style="margin-top: 10px">
-        <h2 class="text-center display-2">Our products</h2>
+</div>
+<div>
+    <h2 class="text-center display-2">About Us</h2>
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-6">
+                    <img src="{% static 'main/img/ort.jpg' %}" class="img-fluid">
+            </div>
+            <div class="col-6">
+                <p class="lead fw-normal">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae deleniti dolores ea eaque exercitationem fuga illum optio quo soluta. Ab aspernatur assumenda, aut consequuntur debitis dolor dolorem ducimus fuga illo inventore nam necessitatibus nesciunt obcaecati, perspiciatis quas similique unde! Accusantium amet animi aut, autem beatae, dolorum fuga id illum iure laudantium libero molestias natus obcaecati sunt velit! Aliquam assumenda esse ipsa ipsam nobis non porro possimus soluta temporibus vero. Accusantium amet blanditiis culpa dolor esse, exercitationem facilis illum, labore laboriosam, perspiciatis qui velit voluptate voluptatum! Culpa id illo minus necessitatibus, recusandae similique tenetur! Autem dignissimos fuga mollitia perspiciatis ut.
+                </p>
+            </div>
+        </div>
     </div>
+</div>
 
-<div class="row my-4 d-flex justify-content-center">
-
-            <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
-                <div class="card" >
-                    <img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap">
-                  <div class="card-body">
-
-                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, omnis?</h5>
-                  </div>
-                </div>
+<div style="margin-top: 10px">
+    <h2 class="text-center display-2">Our products</h2>
+    <div class="row my-4 d-flex justify-content-center">
+        <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+            <div class="card" >
+              <img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, omnis?</h5>
+              </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
-                <div class="card h-100" >
-                  <img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, labore.</h5>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+            <div class="card h-100" >
+              <img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, labore.</h5>
+              </div>
+            </div>
+        </div>
+         <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+            <div class="card h-100" >
+              <img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptates!</h5>
+              </div>
+            </div>
+         </div>
+    </div>
+</div>
 
-                  </div>
-                </div>
-            </div>
-             <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
-                    <div class="card h-100" >
-                      <img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, voluptates!</h5>
-                      </div>
-                    </div>
-                </div>
-            </div>
 {%endblock%}
