@@ -45,7 +45,7 @@
     <div class="row my-4 d-flex justify-content-center">
         <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
             <div class="card" >
-              <img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap">
+              <a href="{% url 'product' 1%}"><img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap"></a>
               <div class="card-body">
                 <h5 class="card-title">Best Yacht1</h5>
               </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
             <div class="card h-100" >
-              <img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap">
+                <a href="{% url 'product' 2%}"><img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
                 <h5 class="card-title">Best Yacht2</h5>
               </div>
@@ -61,7 +61,7 @@
         </div>
          <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
             <div class="card h-100" >
-              <img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap">
+                <a href="{% url 'product' 3%}"><img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
                 <h5 class="card-title">Best Yacht3</h5>
               </div>

@@ -66,8 +66,8 @@
                 <div>
                     <img src="{% static 'products/weight-scale.png' %}" alt="" class="" height="100" width="100">
                 </div>
-                <h5 class="display-6">Wight</h5>
-                <p class="fs-5">{{ product.width }} t</p>
+                <h5 class="display-6">Max load</h5>
+                <p class="fs-5">{{ product.max_load }} t</p>
             </div>
         </div>
     </div>
@@ -78,11 +78,10 @@
 
     <div class="row justify-content-center">
         <div class="col-md-8 text-center fs-5">
-            <p>{{ product.description }}</p>
+            <p>{{ product.description|safe }}</p>
         </div>
     </div>
     <div class="text-center mb-5">
         <a class="btn btn-lg btn-outline-secondary" href="{% url 'homepage' %}#contacts" style="">Contact us</a>
     </div>
-
 {% endblock %}
