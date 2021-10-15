@@ -134,6 +134,11 @@ STATIC_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['creepydandota@yandex.ru']
-DEFAULT_FROM_EMAIL = 'creepydandota@yandex.ru'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+RECIPIENTS_EMAIL = ['pashs.ba@gmail.com']
+DEFAULT_FROM_EMAIL = 'pashs.ba@gmail.com'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '465'
+EMAIL_HOST_USER = 'pashs.ba@gmail.com'
+EMAIL_HOST_PASSWORD = 'DELETED'
+EMAIL_USE_SSL = True
