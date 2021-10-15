@@ -16,21 +16,19 @@ def contact_view(request):
     if request.method == 'GET':
         form = ContactForm()
     elif request.method == 'POST':
-        # если метод POST, проверим форму и отправим письмо
         form = ContactForm(request.POST)
-        if form.is_valid():
-            subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(f'{subject} от {from_email}', message,
-                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
-            except BadHeaderError:
-                return HttpResponse('Ошибка в теме письма.')
-            return redirect('success')
-    else:
-        return HttpResponse('Неверный запрос.')
-    return render(request, "email.html", {'form': form})
+        name = request.POST['name']
+        phone = request.POST['phone']
+        from_email = request.POST['form_email']
+        message = request.POST['message']
+        try:
+            send_mail(f'Buy yacht from {name}, {from_email}, {phone}', message,
+                      DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
+        except BadHeaderError:
+            return HttpResponse('Ошибка в теме письма.')
+        return redirect('homepage')
+
+    return render(request, "email.html")
 
 
 def success_view(request):
