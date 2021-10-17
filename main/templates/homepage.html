@@ -11,7 +11,7 @@
         .small{
             display: none;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 1200px) {
             .big{
                 display: none;
             }
@@ -43,7 +43,7 @@
     <a name="products"></a>
     <h2 class="text-center display-2" name="products">Our products</h2>
     <div class="row my-4 d-flex justify-content-center">
-        <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+        <div class="col-xl-4 my-3 text-center">
             <div class="card" >
               <a href="{% url 'product' 1%}"><img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap"></a>
               <div class="card-body">
@@ -51,7 +51,7 @@
               </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+        <div class="col-xl-4 text-center">
             <div class="card h-100" >
                 <a href="{% url 'product' 2%}"><img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
@@ -59,7 +59,7 @@
               </div>
             </div>
         </div>
-         <div class="col-md-4 col-sm-6 col-lg-3 my-3 text-center">
+         <div class="col-xl-4 text-center">
             <div class="card h-100" >
                 <a href="{% url 'product' 3%}"><img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
@@ -131,11 +131,11 @@
         <div class="container mt-5">
             <div class="row d-flex justify-content-center align-items-center">
 
-                <div class="col-md-3 text-center" style="">
+                <div class="col-xl-3 text-center" style="">
                     <h6 class="display-6">Email</h6>
                     <p class="fs-4">sale@best_yacht.com</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-xl-3 text-center">
                     <h6 class="display-6">Socials</h6>
                     <p class="fs-4">
                         <a href="#" class="link-dark" style="text-decoration: none">
@@ -148,13 +148,13 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-xl-3 text-center">
                     <h6 class="display-6">Phones</h6>
                     <p class="fs-4">+7 999-999-99-99</p>
                     <p class="fs-4">+7 999-999-99-99</p>
                     <p class="fs-4">+7 999-999-99-99</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-xl-3 text-center">
                     <h6 class="display-6">Address</h6>
                     <p class="fs-4">Boulevard Albert 1er, <br>Monaco</p>
                 </div>
