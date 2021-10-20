@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q71y-x=+!l4(4v#e-)hg-x=ft(ks38=3&a70xj(pe6q(%*b*$#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -135,11 +135,11 @@ if not DEBUG:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['pashs.ba@gmail.com']
-DEFAULT_FROM_EMAIL = 'pashs.ba@gmail.com'
+RECIPIENTS_EMAIL = ['contact@luckyboats.ru']
+DEFAULT_FROM_EMAIL = 'user_contact@luckyboats.ru'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = '465'
-EMAIL_HOST_USER = 'pashs.ba@gmail.com'
-EMAIL_HOST_PASSWORD = 'DELETED'
+EMAIL_HOST_USER = 'user_contact@luckyboats.ru'
+EMAIL_HOST_PASSWORD = '8FHk57tv|ZRx@7SqTrap'
 EMAIL_USE_SSL = True

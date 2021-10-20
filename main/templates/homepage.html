@@ -28,7 +28,7 @@
 <div style="margin-top: 10px">
 
     <h2 class="text-center display-2" name="about">About Us</h2>
-    <div class="container mt-5">
+    <div class="container mt-5 ">
         <div class="row align-items-center">
             <div class="col-xl-6">
                     <img src="{% static 'main/img/ort.jpg' %}" class="img-fluid" alt="">
@@ -42,11 +42,11 @@
     </div>
 </div>
 
-<div style="margin-top: 10px">
+<div style="margin-top: 10px; padding: 35px" class="w-100">
     <a name="products"></a>
     <h2 class="text-center display-2" name="products">Our products</h2>
     <div class="row my-4 d-flex justify-content-center">
-        <div class="col-xl-4 my-3 text-center">
+        <div class="col-xl-3 text-center" style="">
             <div class="card" >
               <a href="{% url 'product' 1%}"><img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap"></a>
               <div class="card-body">
@@ -54,7 +54,7 @@
               </div>
             </div>
         </div>
-        <div class="col-xl-4 text-center">
+        <div class="col-xl-3 text-center " style="">
             <div class="card h-100" >
                 <a href="{% url 'product' 2%}"><img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
@@ -62,7 +62,7 @@
               </div>
             </div>
         </div>
-         <div class="col-xl-4 text-center">
+         <div class="col-xl-3 text-center" style="">
             <div class="card h-100" >
                 <a href="{% url 'product' 3%}"><img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
