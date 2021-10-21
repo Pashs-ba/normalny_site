@@ -4,11 +4,13 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from .forms import ContactForm
+from news.models import News
 from oxyenny_site.settings import RECIPIENTS_EMAIL, DEFAULT_FROM_EMAIL
 
 
 def homepage(request):
-    return render(request, 'homepage.html')
+    news = News.objects.all()[:3]
+    return render(request, 'homepage.html', {'news': news})
 
 
 def contact_view(request):

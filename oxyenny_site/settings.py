@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
-    'products'
+    'products',
+    'news'
 ]
 
 MIDDLEWARE = [
@@ -130,12 +131,16 @@ STATIC_DIRS = [
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = '/media/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['contact@luckyboats.ru']
+RECIPIENTS_EMAIL = ['contacts@luckyboats.ru']
 DEFAULT_FROM_EMAIL = 'user_contact@luckyboats.ru'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'

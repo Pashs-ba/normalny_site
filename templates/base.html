@@ -13,18 +13,24 @@
   <body>
 
 <header class="site-header sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark ">
 
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-    <div class="navbar-nav align-items-center">
-      <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#about">About Us</a>
-      <a class="nav-item nav-link fs-5" href="{% url 'all_products' %}">Fleet</a>
-        <a class="navbar-brand" href="#"><IMG src="{% static 'main/img/boat.png' %}" height="64" width="64"></a>
-      <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#">Home</a>
-      <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#contacts">Contact</a>
+      <div class="container-fluid">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+    <div class="navbar-nav align-items-center " style="">
+
+          <a class="navbar-brand" href="{% url 'homepage' %}"><IMG src="{% static 'main/img/boat.png' %}" height="64" width="64"></a>
+          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#about">About Us</a>
+          <a class="nav-item nav-link fs-5" href="{% url 'all_products' %}">Fleet</a>
+
+          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#">News</a>
+            {% if request.user.is_superuser %}<a class="nav-item nav-link fs-5" href="{% url 'create_news' %}#">Create news</a>{% endif %}
+          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#contacts">Contact</a>
+        </div>
     </div>
   </div>
 </nav>

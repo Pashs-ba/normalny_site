@@ -75,6 +75,23 @@
         <a class="btn btn-outline-secondary btn-lg" href="{% url 'all_products'%}">See all products</a>
     </div>
 </div>
+<div style="margin-top: 10px; padding: 35px" class="w-100">
+    <a name="products"></a>
+    <h2 class="text-center display-2" name="products">Our news</h2>
+    <div class="row my-4 d-flex justify-content-center">
+        {% for i in news %}
+            <div class="col-xl-3 text-center " style="">
+                <div class="card h-100" >
+                    <a href="#"><img class="card-img-top" src="/media/{{i.image}}" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <h5 class="card-title">{{ i.ru_title}}</h5>
+                  </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
 <div style="margin-top: 10px">
     <a name="contacts"></a>
     <div class="big">

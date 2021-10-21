@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="container contact-form">
+            <form enctype="multipart/form-data" method="post">
+                <h3 class="display-3 text-center" >Создание новостей</h3>
+                {% csrf_token %}
+                {% for filed in form %}
+                    <div class="form-group my-3">
+                        <label for="{{ id_for_label }}">{{ filed.label }}</label>
+                        {{ filed }}
+                      </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+</div>
+{% endblock %}
