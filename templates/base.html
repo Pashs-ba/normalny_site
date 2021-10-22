@@ -23,18 +23,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-            <a class="nav-link fs-5" href="{% url 'homepage' %}#about">About Us</a>
+            <a class="nav-link fs-5" href="{% url 'homepage' %}#about">О нас</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link fs-5" href="{% url 'all_news' %}#">News</a>
+            <a class="nav-link fs-5" href="{% url 'all_news' %}#">Новости</a>
         </li>
       {% if request.user.is_superuser %}
           <li class="nav-item">
-            <a class="nav-link fs-5" href="{% url 'create_news' %}#">Create news</a>
+            <a class="nav-link fs-5" href="{% url 'create_news' %}#">Создать новость</a>
           </li>
       {% endif %}
       <li class="nav-item">
-        <a class="nav-link fs-5" href="{% url 'homepage' %}#contacts">Contact</a>
+        <a class="nav-link fs-5" href="{% url 'homepage' %}#contacts">Контакты</a>
       </li>
     </ul>
             <ul class="navbar-nav">
