@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'en_base.html' %}
 {% load static %}
 {% block current_page %}
-    {% url 'en_one_new' new.pk%}
+    {% url 'one_new' new.pk%}
 {% endblock %}
 {% block main %}
     <style>
@@ -20,7 +20,7 @@
             }
         }
     </style>
-    <h2 class="display-2 text-center" style="margin-top: 10px">{{ new.ru_title }}</h2>
+    <h2 class="display-2 text-center" style="margin-top: 10px">{{ new.en_title }}</h2>
 
     <div class="row d-flex justify-content-center mw-100">
         <div class="col-xl-10 d-flex justify-content-center">
@@ -30,7 +30,7 @@
     </div>
     <div class="row d-flex justify-content-center my-3 mw-100">
         <div class="col-xl-10">
-            <p class="fs-5">{{ new.ru_text }}</p>
+            <p class="fs-5">{{ new.en_text }}</p>
         </div>
     </div>
 {% endblock %}

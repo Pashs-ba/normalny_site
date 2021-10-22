@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'en_base.html' %}
 {% load static %}
 {% block current_page %}
-    {% url 'en_all_products' %}
+    {% url 'all_products' %}
 {% endblock %}
 {% block main %}
     <h2 class="display-2 text-center" style="margin-top: 10px">Our Fleet</h2>
@@ -9,11 +9,11 @@
         {% for product in products %}
         <div class="col-xl-4 text-center">
             <div class="card h-100" >
-              <a href="{% url 'product' product.pk%}">
+              <a href="{% url 'en_product' product.pk%}">
                   <img class="card-img-top" src="{% static product.images_list.0 %}" alt="Card image cap">
               </a>
               <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
+                <h5 class="card-title">{{ product.en_name }}</h5>
               </div>
             </div>
         </div>

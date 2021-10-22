@@ -1,10 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'en_base.html' %}
 {% load static %}
 {% block current_page %}
-    {% url 'en_product' product.pk%}
+    {% url 'product' product.pk%}
 {% endblock %}
 {% block main %}
-    <h2 class="display-2 text-center" style="margin-top: 10px; margin-bottom: 10px">{{ product.name }}</h2>
+    <h2 class="display-2 text-center" style="margin-top: 10px; margin-bottom: 10px">{{ product.en_name }}</h2>
     <div class="row mw-100">
         <div class="bd-example container ps-lg-4 col-xl-6">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -80,15 +80,15 @@
 
     <div class="row justify-content-center mw-100" style="padding-left: 20px; padding-right: 20px">
         <div class="col-xl-8 text-center fs-5" >
-            <p>{{ product.description|safe }}</p>
+            <p>{{ product.en_description|safe }}</p>
         </div>
     </div>
     <div class="row text-center mb-5 mw-100 d-flex justify-content-center">
         <div class="col-xl-2">
-            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.spec }}" style="">Download all spec</a>
+            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.en_spec }}" style="">Download all spec</a>
         </div>
         <div class="col-xl-2">
-            <a class="btn btn-lg btn-outline-secondary" href="{% url 'homepage' %}#contacts" style="">Contact us</a>
+            <a class="btn btn-lg btn-outline-secondary" href="{% url 'en_homepage' %}#contacts" style="">Contact us</a>
         </div>
 
 

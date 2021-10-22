@@ -13,26 +13,37 @@
   <body>
 
 <header class="site-header sticky-top">
-  <nav class="navbar navbar-expand-xl navbar-dark bg-dark ">
-
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+  <a class="navbar-brand" href="{% url 'homepage' %}"><IMG src="{% static 'main/img/boat.png' %}" height="64" width="64"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
   </button>
-      <div class="container-fluid">
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-    <div class="navbar-nav align-items-center " style="">
-
-          <a class="navbar-brand" href="{% url 'homepage' %}"><IMG src="{% static 'main/img/boat.png' %}" height="64" width="64"></a>
-          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#about">About Us</a>
-          <a class="nav-item nav-link fs-5" href="{% url 'all_products' %}">Fleet</a>
-
-          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#">News</a>
-            {% if request.user.is_superuser %}<a class="nav-item nav-link fs-5" href="{% url 'create_news' %}#">Create news</a>{% endif %}
-          <a class="nav-item nav-link fs-5" href="{% url 'homepage' %}#contacts">Contact</a>
-        </div>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="{% url 'homepage' %}#about">About Us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fs-5" href="{% url 'all_news' %}#">News</a>
+        </li>
+      {% if request.user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="{% url 'create_news' %}#">Create news</a>
+          </li>
+      {% endif %}
+      <li class="nav-item">
+        <a class="nav-link fs-5" href="{% url 'homepage' %}#contacts">Contact</a>
+      </li>
+    </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link fs-5" href="{% block current_page %}{% endblock %}">EN</a>
+                </li>
+            </ul>
   </div>
+</div>
 </nav>
 </header>
 

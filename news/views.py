@@ -30,3 +30,11 @@ def all_news(request):
 
 def one_new(request, pk):
     return render(request, 'new.html', {'new': News.objects.get(pk=pk)})
+
+
+def en_all_news(request):
+    return render(request, 'en_all_news.html', {'news': News.objects.all()})
+
+
+def en_one_new(request, pk):
+    return render(request, 'en_new.html', {'new': News.objects.get(pk=pk)})
