@@ -81,7 +81,14 @@
             <p>{{ product.description|safe }}</p>
         </div>
     </div>
-    <div class="text-center mb-5">
-        <a class="btn btn-lg btn-outline-secondary" href="{% url 'homepage' %}#contacts" style="">Contact us</a>
+    <div class="row text-center mb-5 mw-100 d-flex justify-content-center">
+        <div class="col-xl-2">
+            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.spec }}" style="">Download all spec</a>
+        </div>
+        <div class="col-xl-2">
+            <a class="btn btn-lg btn-outline-secondary" href="{% url 'homepage' %}#contacts" style="">Contact us</a>
+        </div>
+
+
     </div>
 {% endblock %}

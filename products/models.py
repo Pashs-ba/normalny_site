@@ -10,6 +10,7 @@ class Product(models.Model):
     displacement = models.FloatField(null=True)
     passengers = models.IntegerField(null=True)
     max_load = models.FloatField(null=True)
+    spec = models.FileField(null=True)
 
     def __str__(self):
         return self.name
