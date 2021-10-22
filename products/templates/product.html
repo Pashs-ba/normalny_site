@@ -3,7 +3,7 @@
 
 {% block main %}
     <h2 class="display-2 text-center" style="margin-top: 10px; margin-bottom: 10px">{{ product.name }}</h2>
-    <div class="row">
+    <div class="row mw-100">
         <div class="bd-example container ps-lg-4 col-xl-6">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -24,8 +24,8 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center my-5" >
-        <div class="col-xl-2 mx-2 my-2">
+    <div class="row justify-content-center my-5 mw-100" style="padding-left: 25px; padding-right: 25px">
+        <div class="col-xl-2 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/boat.png' %}" alt="" class="" height="100" width="100">
@@ -34,7 +34,7 @@
                 <p class="fs-5">{{ product.length }} m</p>
             </div>
         </div>
-        <div class="col-xl-2 mx-2 my-2">
+        <div class="col-xl-2 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/cruise.png' %}" alt="" class="" height="100" width="100">
@@ -43,7 +43,7 @@
                 <p class="fs-5">{{ product.width }} m</p>
             </div>
         </div>
-        <div class="col-xl-2 mx-2 my-2">
+        <div class="col-xl-2 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/disp.png' %}" alt="" class="" height="100" width="100">
@@ -52,7 +52,7 @@
                 <p class="fs-5">{{ product.displacement }} t</p>
             </div>
         </div>
-        <div class="col-xl-2 mx-2 my-2">
+        <div class="col-xl-2 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/user.png' %}" alt="" class="" height="100" width="100">
@@ -61,7 +61,7 @@
                 <p class="fs-5">{{ product.passengers }}</p>
             </div>
         </div>
-    <div class="col-xl-2 mx-2 my-2">
+    <div class="col-xl-2 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/weight-scale.png' %}" alt="" class="" height="100" width="100">
@@ -76,8 +76,8 @@
 
     </div>
 
-    <div class="row justify-content-center">
-        <div class="col-xl-8 text-center fs-5">
+    <div class="row justify-content-center mw-100" style="padding-left: 20px; padding-right: 20px">
+        <div class="col-xl-8 text-center fs-5" >
             <p>{{ product.description|safe }}</p>
         </div>
     </div>
