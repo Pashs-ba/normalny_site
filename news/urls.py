@@ -4,6 +4,6 @@ from .views import *
 
 urlpatterns = [
     path('create', create_news, name='create_news'),
-    # path('', contact_view, name='contact'),
-    # path('success', success_view, name='success')
+    path('', all_news, name='all_news'),
+    path('<int:pk>', one_new, name='one_new'),
 ]

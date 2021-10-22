@@ -82,7 +82,7 @@
         {% for i in news %}
             <div class="col-xl-3 text-center " style="">
                 <div class="card h-100" >
-                    <a href="#"><img class="card-img-top" src="/media/{{i.image}}" alt="Card image cap"></a>
+                    <a href="{% url 'one_new' i.pk%}"><img class="card-img-top" src="/media/{{i.image}}" alt="Card image cap"></a>
                   <div class="card-body">
                     <h5 class="card-title">{{ i.ru_title}}</h5>
                   </div>
@@ -90,7 +90,9 @@
             </div>
         {% endfor %}
     </div>
-
+    <div class="text-center">
+        <a class="btn btn-outline-secondary btn-lg" href="{% url 'all_news'%}">Все новости</a>
+    </div>
 </div>
 <div style="margin-top: 10px">
     <a name="contacts"></a>
@@ -137,7 +139,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <p class="fs-4">Boulevard Albert 1er, <br>Monaco</p>
+                    <a href = "https://goo.gl/maps/SBpFpDPENAvwU3ZK7" class="fs-4 link-dark" style="text-decoration: none">Boulevard Albert 1er, <br>Monaco</a>
                 </div>
 
             </div>

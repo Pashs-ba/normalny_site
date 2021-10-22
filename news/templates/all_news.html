@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <h2 class="display-2 text-center" style="margin-top: 10px">News</h2>
+    <div class="row my-4 d-flex justify-content-center align-items-center">
+        {% for new in news %}
+        <div class="col-xl-3 text-center">
+            <div class="card h-100" >
+              <a href="{% url 'one_new' new.pk%}">
+                  <img class="card-img-top" src="/media/{{ new.image }}" alt="Card image cap">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">{{ new.ru_title }}</h5>
+                <p class="card-text">{{ new.ru_text| slice:60}}...</p>
+                <a href="{% url 'one_new' new.pk%}" class="btn btn-primary">Читать дальше</a>
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
