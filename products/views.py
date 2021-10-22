@@ -15,7 +15,7 @@ def en_all_products_page(request):
     products = Product.objects.all()
     for i in products:
         print(i.images_list)
-    return render(request, 'all_products.html', {
+    return render(request, 'en_all_products.html', {
         'products': Product.objects.all()
     })
 

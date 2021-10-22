@@ -26,6 +26,9 @@
             <a class="nav-link fs-5" href="{% url 'en_homepage' %}#about">About Us</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link fs-5" href="{% url 'en_all_products' %}#about">Our fleet</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link fs-5" href="{% url 'en_all_news' %}#">News</a>
         </li>
       {% if request.user.is_superuser %}
