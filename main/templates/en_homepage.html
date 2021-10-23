@@ -6,7 +6,7 @@
 {%block main%}
 <div class="position-relative overflow-hidden text-center bg-light h-100 d-flex align-items-center" style="background-image: url({% static 'main/img/sea.jpeg' %}); background-position: center ">
     <div class="col-lg-5 p-lg-5 mx-auto my-5" >
-      <h1 class="text-light display-2">Good</h1>
+      <h1 class="text-light display-2">LuckyBoats</h1>
       <p class="lead fw-normal text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque debitis delectus laboriosam laudantium maxime perspiciatis quis sit tenetur voluptatum!</p>
       <a class="btn btn-lg btn-outline-light" href="#contacts" style="">Contact us</a>
     </div>
@@ -48,28 +48,28 @@
 <div style="margin-top: 10px; padding: 35px" class="w-100">
     <a name="products"></a>
     <h2 class="text-center display-2" name="products">Our products</h2>
-    <div class="row my-4 d-flex justify-content-center">
+    <div class="row my-4 d-flex justify-content-center align-items-center">
         <div class="col-xl-3 text-center" style="">
             <div class="card" >
-              <a href="{% url 'en_product' 1%}"><img class="card-img-top" src="{% static 'main/img/test.jpeg' %}" alt="Card image cap"></a>
+              <a href="{% url 'en_product' 1%}"><img class="card-img-top" src="{% static 'main/img/moana2.jpeg' %}" alt="Card image cap"></a>
               <div class="card-body">
-                <h5 class="card-title">Best Yacht1</h5>
+                <h5 class="card-title">Rau Yachts Moana 770</h5>
               </div>
             </div>
         </div>
         <div class="col-xl-3 text-center " style="">
             <div class="card h-100" >
-                <a href="{% url 'en_product' 2%}"><img class="card-img-top" src="{% static 'main/img/yacha-3.jpg' %}" alt="Card image cap"></a>
+                <a href="{% url 'en_product' 2%}"><img class="card-img-top" src="{% static 'main/img/comfort1.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
-                <h5 class="card-title">Best Yacht2</h5>
+                <h5 class="card-title">Comfort 36 ft</h5>
               </div>
             </div>
         </div>
          <div class="col-xl-3 text-center" style="">
             <div class="card h-100" >
-                <a href="{% url 'en_product' 3%}"><img class="card-img-top" src="{% static 'main/img/yacha-2.jpg' %}" alt="Card image cap"></a>
+                <a href="{% url 'en_product' 3%}"><img class="card-img-top" src="{% static 'main/img/t283.jpg' %}" alt="Card image cap"></a>
               <div class="card-body">
-                <h5 class="card-title">Best Yacht3</h5>
+                <h5 class="card-title">Atak Yachts T28 Cruiser</h5>
               </div>
             </div>
          </div>
@@ -81,7 +81,7 @@
 <div style="margin-top: 10px; padding: 35px" class="w-100">
     <a name="products"></a>
     <h2 class="text-center display-2" name="products">Our news</h2>
-    <div class="row my-4 d-flex justify-content-center">
+    <div class="row my-4 d-flex justify-content-center align-items-center">
         {% for i in news %}
             <div class="col-xl-3 text-center " style="">
                 <div class="card h-100" >
@@ -94,7 +94,7 @@
         {% endfor %}
     </div>
     <div class="text-center">
-        <a class="btn btn-outline-secondary btn-lg" href="{% url 'en_all_news'%}">Все новости</a>
+        <a class="btn btn-outline-secondary btn-lg" href="{% url 'en_all_news'%}">All News</a>
     </div>
 </div>
 <div style="margin-top: 10px">
@@ -123,26 +123,24 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-3 text-center">
                     <p class="fs-4">+7 999-999-99-99</p>
-                    <p class="fs-4">+7 999-999-99-99</p>
-                    <p class="fs-4">+7 999-999-99-99</p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <p class="fs-4">sale@best_yacht.com</p>
+                    <p class="fs-4">info@luckyboats.ru</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <p class="fs-4">
                         <a href="#" class="link-dark" style="text-decoration: none">
-                            <i class="bi bi-instagram"></i> @Best_Yachts
+                            <i class="bi bi-instagram"></i> @LuckyBoats
                         </a>
                     </p>
                     <p class="fs-4">
                         <a href="#" class="link-dark" style="text-decoration: none">
-                            <i class="bi bi-facebook"></i> Best_Yachts
+                            <i class="bi bi-facebook"></i> LuckyBoats
                         </a>
                     </p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href = "https://goo.gl/maps/SBpFpDPENAvwU3ZK7" class="fs-4 link-dark" style="text-decoration: none">Boulevard Albert 1er, <br>Monaco</a>
+                    <a href = "https://goo.gl/maps/SBpFpDPENAvwU3ZK7" class="fs-4 link-dark" style="text-decoration: none">Saint Petersburg <br>Russia</a>
                 </div>
 
             </div>
@@ -158,30 +156,28 @@
 
                 <div class="col-xl-3 text-center" style="">
                     <h6 class="display-6">Email</h6>
-                    <p class="fs-4">sale@best_yacht.com</p>
+                    <p class="fs-4">info@luckyboats.ru</p>
                 </div>
                 <div class="col-xl-3 text-center">
                     <h6 class="display-6">Socials</h6>
                     <p class="fs-4">
                         <a href="#" class="link-dark" style="text-decoration: none">
-                            <i class="bi bi-instagram"></i> @Best_Yachts
+                            <i class="bi bi-instagram"></i> @LuckyBoats
                         </a>
                     </p>
                     <p class="fs-4">
                         <a href="#" class="link-dark" style="text-decoration: none">
-                            <i class="bi bi-facebook"></i> Best_Yachts
+                            <i class="bi bi-facebook"></i> LuckyBoats
                         </a>
                     </p>
                 </div>
                 <div class="col-xl-3 text-center">
                     <h6 class="display-6">Phones</h6>
                     <p class="fs-4">+7 999-999-99-99</p>
-                    <p class="fs-4">+7 999-999-99-99</p>
-                    <p class="fs-4">+7 999-999-99-99</p>
                 </div>
                 <div class="col-xl-3 text-center">
                     <h6 class="display-6">Address</h6>
-                    <a href = "https://goo.gl/maps/SBpFpDPENAvwU3ZK7" class="fs-4 link-dark" style="text-decoration: none">Boulevard Albert 1er, <br>Monaco</a>
+                    <a href = "https://goo.gl/maps/SBpFpDPENAvwU3ZK7" class="fs-4 link-dark" style="text-decoration: none">Saint Petersburg <br>Russia</a>
                 </div>
 
             </div>

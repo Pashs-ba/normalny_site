@@ -140,11 +140,11 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-RECIPIENTS_EMAIL = ['contacts@luckyboats.ru']
-DEFAULT_FROM_EMAIL = 'user_contact@luckyboats.ru'
+RECIPIENTS_EMAIL = ['info@luckyboats.ru']
+DEFAULT_FROM_EMAIL = 'info@luckyboats.ru'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = '465'
-EMAIL_HOST_USER = 'user_contact@luckyboats.ru'
-EMAIL_HOST_PASSWORD = '8FHk57tv|ZRx@7SqTrap'
+EMAIL_HOST_USER = 'info@luckyboats.ru'
+EMAIL_HOST_PASSWORD = 'Pescador575'
 EMAIL_USE_SSL = True

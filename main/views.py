@@ -29,7 +29,7 @@ def contact_view(request):
         from_email = request.POST['form_email']
         message = request.POST['message']
         try:
-            send_mail(f'Buy yacht from {name}, {from_email}, {phone}', message,
+            send_mail(f'Обращение от пользователя {name}, почта: {from_email}, телефон: {phone}', message,
                       DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
         except BadHeaderError:
             return HttpResponse('Ошибка в теме письма.')
