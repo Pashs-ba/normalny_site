@@ -97,7 +97,7 @@
                     <img src="{% static 'products/disp.png' %}" alt="" class="" height="100" width="100">
                 </div>
                 <h5 class="display-6">Draft<br></h5>
-                <p class="fs-5">{{ product.displacement }} t</p>
+                <p class="fs-5">{{ product.displacement }} m</p>
             </div>
         </div>
         <div class="col-xl-2 my-2 mw-100">
@@ -115,7 +115,7 @@
                     <img src="{% static 'products/weight-scale.png' %}" alt="" class="" height="100" width="100">
                 </div>
                 <h5 class="display-6">Max load</h5>
-                <p class="fs-5">{{ product.max_load }} t</p>
+                <p class="fs-5">{{ product.max_load }} kg</p>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@
     </div>
     <div class="row text-center mb-5 mw-100 d-flex justify-content-center">
         <div class="col-xl-2">
-            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.en_spec }}" style="">Download all spec</a>
+            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.en_spec }}" style="">Download specification</a>
         </div>
         <div class="col-xl-2">
             <a class="btn btn-lg btn-outline-secondary" href="{% url 'en_homepage' %}#contacts" style="">Contact us</a>

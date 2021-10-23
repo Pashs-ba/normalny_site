@@ -79,7 +79,7 @@
                     <img src="{% static 'products/boat.png' %}" alt="" class="" height="100" width="100">
                 </div>
                 <h5 class="display-6">Длина</h5>
-                <p class="fs-5">{{ product.length }} m</p>
+                <p class="fs-5">{{ product.length }} м</p>
             </div>
         </div>
         <div class="col-xl-2 my-2 mw-100">
@@ -88,7 +88,7 @@
                     <img src="{% static 'products/cruise.png' %}" alt="" class="" height="100" width="100">
                 </div>
                 <h5 class="display-6">Ширина</h5>
-                <p class="fs-5">{{ product.width }} m</p>
+                <p class="fs-5">{{ product.width }} м</p>
             </div>
         </div>
         <div class="col-xl-2 my-2 mw-100">
@@ -96,8 +96,8 @@
                 <div>
                     <img src="{% static 'products/disp.png' %}" alt="" class="" height="100" width="100">
                 </div>
-                <h5 class="display-6">Тоннаж<br></h5>
-                <p class="fs-5">{{ product.displacement }} t</p>
+                <h5 class="display-6">Осадка<br></h5>
+                <p class="fs-5">{{ product.displacement }} м</p>
             </div>
         </div>
         <div class="col-xl-2 my-2 mw-100">
@@ -105,7 +105,7 @@
                 <div>
                     <img src="{% static 'products/user.png' %}" alt="" class="" height="100" width="100">
                 </div>
-                <h5 class="display-6">Кол-во <br>пассажиров</h5>
+                <h5 class="display-6">Пассажиры</h5>
                 <p class="fs-5">{{ product.passengers }}</p>
             </div>
         </div>
@@ -115,7 +115,7 @@
                     <img src="{% static 'products/weight-scale.png' %}" alt="" class="" height="100" width="100">
                 </div>
                 <h5 class="display-6">Макс. нагрузка</h5>
-                <p class="fs-5">{{ product.max_load }} t</p>
+                <p class="fs-5">{{ product.max_load }} кг</p>
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@
     </div>
     <div class="row text-center mb-5 mw-100 d-flex justify-content-center align-items-center">
         <div class="col-xl-2">
-            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.spec }}" style="">Скачать все спецификации</a>
+            <a class="btn btn-lg btn-outline-secondary" href="/media/{{ product.spec }}" style="">Скачать спецификацию</a>
         </div>
         <div class="col-xl-2">
             <a class="btn btn-lg btn-outline-secondary" href="{% url 'homepage' %}#contacts" style="">Связаться с нами</a>
