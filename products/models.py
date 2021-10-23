@@ -9,6 +9,7 @@ class Product(models.Model):
     en_description = models.TextField(null=True)
 
     images_list = models.JSONField()
+    into_photos = models.JSONField(null=True)
 
     length = models.FloatField(null=True)
     width = models.FloatField(null=True)
