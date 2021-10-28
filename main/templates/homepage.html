@@ -5,9 +5,9 @@
 {% endblock %}
 {%block main%}
 <div class="position-relative overflow-hidden text-center bg-light h-100 d-flex" style="background-image: url({% static 'main/img/sea.jpeg' %}); background-position: center ">
-    <div class="col-lg-5 p-lg-5 mx-auto my-5" >
-      <h1 class="text-light display-2 my-5">LuckyBoats</h1>
-      <p class="lead fw-normal display-6 text-light">New Vision - New Decision</p>
+    <div class="p-lg-5 mx-auto my-5" >
+      <h1 class="text-light fw-normal display-1 my-5">LuckyBoats</h1>
+      <p class="lead display-2 text-light">New Vision - New Decision for You</p>
       <a class="btn btn-lg btn-outline-light my-3" href="#contacts" style="">Свяжитесь с нами</a>
     </div>
     <style>
@@ -28,17 +28,39 @@
     </style>
 </div>
 <a name="about"></a>
-<div style="margin-top: 10px">
-
-    <h2 class="text-center display-2" name="about">О нас</h2>
-    <div class="container mt-5 ">
+<div style="margin-top: 25px; background-image: url({% static '' %})">
+    <h2 class="position-relative text-center display-2" name="about">О нас</h2>
+    <div class="position-relative container mt-5">
         <div class="row align-items-center">
             <div class="col-xl-6">
-                    <img src="{% static 'main/img/ort.jpg' %}" class="img-fluid" alt="">
+                    <img src="{% static 'main/img/ort.jpg' %}" class="img-fluid mb-3" alt="">
+                    <img src="{% static 'main/img/ort2.jpg' %}" class="img-fluid mt-5" alt="">
             </div>
-            <div class="col-xl-6" style="margin-top: 10px">
-                <p class="lead fw-normal">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae deleniti dolores ea eaque exercitationem fuga illum optio quo soluta. Ab aspernatur assumenda, aut consequuntur debitis dolor dolorem ducimus fuga illo inventore nam necessitatibus nesciunt obcaecati, perspiciatis quas similique unde! Accusantium amet animi aut, autem beatae, dolorum fuga id illum iure laudantium libero molestias natus obcaecati sunt velit! Aliquam assumenda esse ipsa ipsam nobis non porro possimus soluta temporibus vero. Accusantium amet blanditiis culpa dolor esse, exercitationem facilis illum, labore laboriosam, perspiciatis qui velit voluptate voluptatum! Culpa id illo minus necessitatibus, recusandae similique tenetur! Autem dignissimos fuga mollitia perspiciatis ut.
+            <div class="col-xl-6" style="margin-top: 0px">
+                <p class="lead fw-normal">Мы - команда единомышленников, объединенная общими идеями, целями и
+                    задачами. Нами наработан огромный опыт в продвижении, продажах и эксплуатации
+                    моторных катеров и парусных яхт на российском и зарубежных рынках. Мы участники
+                    практически всех значимых выставок катеров и яхт таких как Dusseldorf boat show,
+                    Cannes Yachting Festival, Dubai boat show, Moscow boat show. На сегодняшний день
+                    наша компания является эксклюзивным дистрибьютером новых брендов, таких как
+                    RAU YACHTS, ARTAK YACHTS, PESCADOR, COMFORT, которые в свою очередь
+                    представляют собой новый взгляд на строительство моторных катеров и яхт - и в
+                    первую очередь их доступность для широкого круга людей не обладающих
+                    сверхдоходами, но в тоже самое время с самым высоким уровнем качества и
+                    комфорта, для чего при строительстве лодок используются самые новые технологии,
+                    материалы и конструктивные решения Таким образом двигаясь в ногу со временем и
+                    стараясь соответствовать новым вызовам эпохи, мы стремимся удовлетворить все
+                    более возрастающий интерес и спрос на моторные катера и яхты по самым
+                    доступным ценам в нашей стране и за рубежом.
+                </p>
+                <p class="lead fw-normal">Также компания LUCKYBOATS осуществляет продажу подержанных моторных
+                    катеров и яхт, послепродажное и гарантийное обслуживание, обеспечивает
+                    комплексное решение вопросов связанное с приобретением моторной яхты или
+                    катера. Это включает в себя доставку судна в Российскую Федерацию, таможенное
+                    оформление, регистрацию и постановку на учет в органах ГИМС.
+                </p>
+                <p class="lead fw-normal"> Новое видение - новое решение - для вас - вот основной принцип и миссия нашей
+                    команды компании LUCKYBOATS
                 </p>
             </div>
         </div>
@@ -121,7 +143,8 @@
             </div>
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-3 text-center">
-                    <p class="fs-4">+7 999-999-99-99</p>
+                    <p class="fs-4">+7 905-217-90-00</p>
+                    <p class="fs-4">+7 905-271-90-00</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <p class="fs-4">info@luckyboats.ru</p>
@@ -139,13 +162,42 @@
                     </p>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href = "https://goo.gl/maps/ja68s8QfwknakQZx8" class="fs-4 link-dark" style="text-decoration: none">Санкт-Петербург <br>Россия</a>
+                    <a href = "https://goo.gl/maps/Xqxrqot4TcS1wNPi7" class="fs-4 link-dark" style="text-decoration: none">Санкт-Петербург, Россия<br></a>
+                    <a href = "https://goo.gl/maps/bPYeopyLRQYfAfDt6" class="fs-4 link-dark" style="text-decoration: none">Москва, Россия</a>
                 </div>
+            </div>
 
+            <div class="row mt-4">
+              <div class="col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                  <div class="view view-cascade gradient-card-header blue-gradient">
+                    <h5 class="fs-2 text-center">Санкт-Петербург</h5>
+                  </div>
+                  <div class="card-body card-body-cascade text-center">
+                    <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="overflow: hidden; padding-bottom: 56.25%; position:relative; height: 0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.7403696057575!2d30.304402216196397!3d59.98621586522161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634075cf5f513%3A0x6793c792e4a1a1fc!2z0KHRgtCw0YDQvtCx0LXQu9GM0YHQutCw0Y8g0YPQuy4sIDQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTczNDI!5e0!3m2!1sru!2sru!4v1635437642386!5m2!1sru!2sru"
+                        style="border:0; left: 0; top: 0; height: 100%; width: 100%; position: absolute" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                  <div class="view view-cascade gradient-card-header peach-gradient">
+                    <h5 class="fs-2 text-center">Москва</h5>
+                  </div>
+                  <div class="card-body card-body-cascade text-center">
+                    <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="overflow: hidden; padding-bottom: 56.25%; position:relative; height: 0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3464228385!2d36.825139684750134!3d55.58152447908879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1635437692112!5m2!1sru!2sru"
+                        style="border:0; left: 0; top: 0; height: 100%; width: 100%; position: absolute" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <div class="my-3 d-flex justify-content-center">
-            <a class="btn btn-outline-secondary btn-lg" href="{% url 'contact' %}">Написать нам</a>
+            <a class="btn btn-outline-secondary btn-lg" href="{% url 'contact' %}" style="width: 200px; height: 50px">Написать нам</a>
         </div>
     </div>
     <div class="small">
@@ -172,17 +224,46 @@
                 </div>
                 <div class="col-xl-3 text-center">
                     <h6 class="display-6">Телефоны</h6>
-                    <p class="fs-4">+7 999-999-99-99</p>
+                    <p class="fs-4">+7 905-217-90-00</p>
+                    <p class="fs-4">+7 905-271-90-00</p>
                 </div>
                 <div class="col-xl-3 text-center">
                     <h6 class="display-6">Адрес</h6>
-                    <a href = "https://goo.gl/maps/ja68s8QfwknakQZx8" class="fs-4 link-dark" style="text-decoration: none">Санкт-Петербург <br>Россия</a>
+                    <a href = "https://goo.gl/maps/Xqxrqot4TcS1wNPi7" class="fs-4 link-dark" style="text-decoration: none">Санкт-Петербург, Россия<br></a>
+                    <a href = "https://goo.gl/maps/bPYeopyLRQYfAfDt6" class="fs-4 link-dark" style="text-decoration: none">Москва, Россия</a>
                 </div>
-
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                  <div class="view view-cascade gradient-card-header blue-gradient">
+                    <h5 class="mb-0">Санкт-Петербург</h5>
+                  </div>
+                  <div class="card-body card-body-cascade text-center">
+                    <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="overflow: hidden; padding-bottom: 56.25%; position:relative; height: 0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.7403696057575!2d30.304402216196397!3d59.98621586522161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634075cf5f513%3A0x6793c792e4a1a1fc!2z0KHRgtCw0YDQvtCx0LXQu9GM0YHQutCw0Y8g0YPQuy4sIDQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTczNDI!5e0!3m2!1sru!2sru!4v1635437642386!5m2!1sru!2sru"
+                        style="border:0; left: 0; top: 0; height: 100%; width: 100%; position: absolute" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="card card-cascade narrower">
+                  <div class="view view-cascade gradient-card-header peach-gradient">
+                    <h5 class="mb-0">Москва</h5>
+                  </div>
+                  <div class="card-body card-body-cascade text-center">
+                    <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="overflow: hidden; padding-bottom: 56.25%; position:relative; height: 0">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577325.3464228385!2d36.825139684750134!3d55.58152447908879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1635437692112!5m2!1sru!2sru"
+                        style="border:0; left: 0; top: 0; height: 100%; width: 100%; position: absolute" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
         <div class="my-3 d-flex justify-content-center">
-            <a class="btn btn-outline-secondary btn-lg" href="{% url 'contact' %}">Написать нам</a>
+            <a class="btn btn-outline-secondary btn-lg" href="{% url 'contact' %}" style="width: 200px; height: 50px">Написать нам</a>
         </div>
     </div>
 </div>
