@@ -16,6 +16,7 @@ class Product(models.Model):
     displacement = models.FloatField(null=True)
     passengers = models.IntegerField(null=True)
     max_load = models.FloatField(null=True)
+    #price = models.IntegerField(null=False)
 
     spec = models.FileField(null=True)
     en_spec = models.FileField(null=True)
