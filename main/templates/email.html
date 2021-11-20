@@ -5,7 +5,15 @@
 {% block main %}
 <div class="container contact-form" style="margin-top: 200px">
             <form method="post">
-                <h3 class="display-3 text-center" >Оставьте свои контакты для связи!</h3>
+                <h3 class="display-3 text-center mb-5" >Оставьте свои контакты для связи!</h3>
+
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+                 <script>
+                    function onSubmit(token) {
+                        document.getElementById("demo-form").submit();
+                    }
+                 </script>
+
                <div class="row">
                    {% csrf_token %}
                     <div class="col-md-6">
@@ -27,7 +35,7 @@
                             <textarea name="message" class="form-control" placeholder="Ваше сообщение" style="width: 100%; height: 150px;"></textarea>
                     </div>
                    <div class="my-3 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-outline-secondary btn-lg">Послать</button>
+                        <button type="submit" class="g-recaptcha btn btn-outline-secondary btn-lg" data-sitekey="6LdXb0gdAAAAAGafj0K_d4isDOuJHbDiU1Av7UhR" data-callback='onSubmit' data-action='submit'>Послать</button>
                    </div>
                 </div>
             </form>
