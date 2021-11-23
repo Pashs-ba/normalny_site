@@ -70,7 +70,9 @@ window.addEventListener("load", function (){
         document.getElementById('item2').style.color = 'rgba(255,255,255,0.68)';
         document.getElementById('item3').style.color = 'rgba(255,255,255,0.68)';
         document.getElementById('item4').style.color = 'rgba(255,255,255,0.68)';
-        document.getElementById('item5').style.color = 'rgba(255,255,255,0.68)';
+        {% if request.user.is_superuser %}
+            document.getElementById('item5').style.color = 'rgba(255,255,255,0.68)';
+        {% endif %}
         document.getElementById('item6').style.color = 'rgba(255,255,255,0.68)';
         document.getElementById('item7').style.color = 'rgba(255,255,255,0.68)';
     }
