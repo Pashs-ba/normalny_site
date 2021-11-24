@@ -73,7 +73,7 @@
         </script>
     </div>
     <div class="row justify-content-center my-5 mw-100 align-items-center" style="padding-left: 25px; padding-right: 25px">
-        <div class="col-xl-2 my-2 mw-100">
+        <div class="col-xl-1 my-2 mw-100">
             <div class="card d-flex justify-content-center text-center py-3">
                 <div>
                     <img src="{% static 'products/boat.png' %}" alt="" class="" height="100" width="100">
@@ -118,6 +118,15 @@
                     <p class="fs-5">{{ product.max_load }} кг</p>
                 </div>
         </div>
+        <div class="col-xl-1 my-4 mw-100">
+                <div class="card d-flex justify-content-center text-center py-3">
+                    <div>
+                        <img src="{% static 'products/price.png' %}" alt="" class="" height="100" width="100">
+                    </div>
+                    <h5 class="display-6">Цена</h5>
+                    <p class="fs-5">От {{ product.price }}€</p>
+                </div>
+        </div>
     </div>
     <div class="row justify-content-center" >
 
@@ -125,7 +134,7 @@
     </div>
 
     <div class="row justify-content-center mw-100" style="padding-left: 20px; padding-right: 20px">
-        <div class="col-xl-8 text-center fs-5" >
+        <div class="col-xl-8 text-center fs-2" >
             <p>{{ product.description|safe }}</p>
         </div>
     </div>
